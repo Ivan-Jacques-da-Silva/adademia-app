@@ -24,11 +24,11 @@
         <h2 class="font-branco titulos-main">Crie sua conta</h2>
         <div class="alinhamento-centro">
             <form class="form-cadastro" action="">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
-                <input type="password" placeholder="Senha">
+                <input id="nome" type="text" placeholder="Nome">
+                <input id="email" type="email" placeholder="E-mail">
+                <input id="senha" type="password" placeholder="Senha">
             </form>
-            <button>Cadastrar</button>
+            <button onclick="salvarUsuario()">Cadastrar</button>
         </div>
     </main>
     <footer>
@@ -48,7 +48,17 @@
             <a href="https://wa.me/5555991339517?text=Ol%C3%A1%2C+Vim+pelo+site%21"> <img width="80px" height="80px"
                     src="img/whatsapp.png"></a>
         </div>
-    </footer>
+    </footer> 
+    <script>
+        function salvarUsuario(){
+            nome = document.getElementById("nome").value
+            email = document.getElementById("email").value
+            senha = document.getElementById("senha").value
+            localStorage.setItem(nome, '{"nome":"'+ nome + '", "email":"' + email + '", "senha":"'+ senha +'"}')
+            alert("O Usuário " + nome +" foi salvo com sucesso")
+            console.log(localStorage.getItem(nome))
+        }
+    </script>
 
 </body>
 
