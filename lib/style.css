@@ -69,8 +69,8 @@ h1 {
     padding: 12px;
 }
 
-.titulos-main{
-    font-size: 25px;    
+.titulos-main {
+    font-size: 25px;
 }
 
 main h2 {
@@ -148,10 +148,17 @@ footer {
 }
 
 .form-cadastro input {
+    width: 332px;
+    height: 60px;
+    padding-left: 35px;
     background-color: #000;
     font-family: Anton;
+    font-size: 23px;
     text-align: left;
     color: #fff;
-    width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
+}
+
+.form-cadastro input::placeholder {
+    color: #fff;
 }
