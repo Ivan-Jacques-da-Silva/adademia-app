@@ -1,44 +1,50 @@
-body{
+body {
     background-color: #ff383e;
     margin: 0;
     padding: 0;
     font-family: 'Anton', sans-serif;
 }
-header{
+
+header {
     background-image: url("../img/banner.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 @font-face {
     font-family: Anton;
     src: url(../lib/font/Anton-Regular.ttf)
-  }
+}
 
 @font-face {
     font-family: Rounded;
     src: url(../lib/font/MPLUSRounded1c-Bold.ttf);
 }
+
 @font-face {
     font-family: Rounded-regular;
     src: url(../lib/font/MPLUSRounded1c-Regular.ttf);
 }
-h1{
+
+h1 {
     font-family: Anton;
     text-align: left;
     font-size: 75px;
     margin: 0;
-    
+
 }
 
-.img-logo{
+.img-logo {
     margin-top: 60px;
     width: 380px;
 }
-.logo-header{
+
+.logo-header {
     text-align: center;
 }
-.font-rosa{
+
+.font-rosa {
     color: #ff383e;
     font-family: 'Anton', sans-serif;
     font-size: 75px;
@@ -47,7 +53,7 @@ h1{
     line-height: 75px;
 }
 
-.font-branco{
+.font-branco {
     color: #fff;
     font-family: 'Anton', sans-serif;
     font-size: 75px;
@@ -56,11 +62,15 @@ h1{
     line-height: 75px;
 }
 
-.texto-top{
+.texto-top {
     width: 404px;
     margin: auto;
     margin-top: 30px;
     padding: 12px;
+}
+
+.titulos-main{
+    font-size: 25px;    
 }
 
 main h2 {
@@ -70,7 +80,8 @@ main h2 {
     font-weight: 400;
     line-height: 45px;
 }
-button{
+
+button {
     width: 249px;
     height: 83px;
     background-color: #000;
@@ -85,12 +96,12 @@ button{
     margin-bottom: 45px;
 }
 
-.alinhamento-centro{
+.alinhamento-centro {
     margin: auto;
     text-align: center;
 }
 
-footer{
+footer {
     background-image: url("../img/footer.png");
     margin: 0px;
     padding: 0px;
@@ -99,7 +110,7 @@ footer{
     background-size: cover;
 }
 
-.alinhamento-footer h2{
+.alinhamento-footer h2 {
     margin: auto;
     width: 404px;
     font-size: 45px;
@@ -107,36 +118,36 @@ footer{
     font-weight: 400;
     line-height: 45px;
 }
-.alinhamento-footer{
+
+.alinhamento-footer {
     font-family: Anton;
     text-align: left;
     margin-top: 25px;
     padding: 32px;
 }
 
-.texto-footer{
+.texto-footer {
     margin: auto;
     width: 404px;
 }
 
-.texto-footer p{
-    font-family: Rounded-regular!important;
+.texto-footer p {
+    font-family: Rounded-regular !important;
     color: #fff;
     font-size: 15px;
 }
 
-.CenterFitFooter{
+.CenterFitFooter {
     font-size: 19px;
     font-family: Rounded;
-    
+
 }
 
-.form-cadastro{
-    
+.form-cadastro {
     margin: auto;
 }
 
-.form-cadastro input{
+.form-cadastro input {
     background-color: #000;
     font-family: Anton;
     text-align: left;
