@@ -28,7 +28,17 @@
                 <input id="email" type="email" placeholder="E-mail">
                 <input id="senha" type="password" placeholder="Senha">
             </form>
-            <button onclick="salvarUsuario()">Cadastrar</button>
+            <a class="btn-cadastro" href="#modal-cadastro" onclick="salvarUsuario()">Cadastrar</a>
+        </div>
+
+        <div id="modal-cadastro" class="modal">
+            <div class="modal-body">
+                <a href="#" class="close-cadastro">X</a>
+                <a href="./novo_treino.html">
+                    <h2 class="font-rosa font-popup1">OBRIGADO POR SE CADASTRAR</h2>
+                    <h2 class="font-branco">VAMOS PARA O PRIMEIRO TREINO</h2>
+                </a>
+            </div>
         </div>
     </main>
     <footer>

@@ -12,6 +12,10 @@ header {
     background-size: cover;
 }
 
+a{
+    text-decoration: none;
+}
+
 @font-face {
     font-family: Anton;
     src: url(../lib/font/Anton-Regular.ttf)
@@ -81,9 +85,9 @@ main h2 {
     line-height: 45px;
 }
 
-button {
-    width: 249px;
-    height: 83px;
+button{
+    width: 249px!important;
+    height: 83px!important;
     background-color: #000;
     border: none;
     cursor: pointer;
@@ -98,6 +102,7 @@ button {
 
 .alinhamento-centro {
     margin: auto;
+    margin-bottom: 60px;
     text-align: center;
 }
 
@@ -162,3 +167,73 @@ footer {
 .form-cadastro input::placeholder {
     color: #fff;
 }
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(77, 77, 77, 0.7);
+    transition: all 0.4s;
+    
+}
+
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-body{
+    background-color: #000;
+    width: 377px;
+    height: 211px;
+    
+}
+
+.modal-body .close-cadastro{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 345px;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 40px;
+    font-weight: 400;
+    width: 30px;
+    height: 30px;
+}
+
+.close-cadastro:visited{
+    color: #fff;
+}
+
+.btn-cadastro {
+    padding: 10px 25px;
+    margin-bottom: 180px!important;
+    font-size: 23px;
+    font-style: normal;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 400;
+    background-color: #000;
+}
+
+.btn-cadastro:visited{
+    color: #fff;
+}
+
+.modal-body h2{
+    font-size: 40px;
+    font-style: normal;
+    line-height: 40px;
+    font-weight: 400;
+    margin: 0;
+    margin: 15px 15px 0 15px!important;
+    text-align: left!important;
+}
+
