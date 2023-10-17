@@ -16,18 +16,33 @@
                 <img class="img-logo" src="img/logo.png" alt="logo">
             </a>
             <div class="texto-top">
-                <h1 class="font-rosa">PREPARE-SE</h1>
-                <h1 class="font-rosa">PARA MUDAR</h1>
-                <H1 class="font-branco">PARA MELHOR</H1>
+                <h1 class="font-rosa">AGENDE</h1>
             </div>
         </div>
     </header>
     <main>
-        <h2 class="font-branco">Escolhas mais saudáveis</h2>
+        <h2 class="font-branco titulos-main">Escolha o melhor horário para você!</h2>
         <div class="alinhamento-centro">
-            <button onclick="window.open('./cadastro.html', '_self')">Cadastre-se</button>
-            <button onclick="window.open('./cadastro.html', '_self')">Novo Treino</button>
-            <button onclick="window.open('./cadastro.html', '_self')">Treinos</button>
+            <form class="form-cadastro" action="">
+                <input id="nome" type="text" placeholder="Nome">
+                <input id="data" type="date">
+                <input id="hora" type="time">
+                <select id="treino">
+                    <option value="Musculacao">Musculação</option>
+                    <option value="Aerobico">Aerobico</option>
+                </select>
+            </form>
+            <a class="btn-cadastro" href="#modal-cadastro" onclick="salvarNaAgenda()">Cadastrar</a>
+        </div>
+
+        <div id="modal-cadastro" class="modal">
+            <div class="modal-body">
+                <a href="#" class="close-cadastro">X</a>
+                <a href="./novo_treino.html">
+                    <h2 class="font-rosa font-popup1">OBRIGADO POR SE CADASTRAR</h2>
+                    <h2 class="font-branco">VAMOS PARA O PRIMEIRO TREINO</h2>
+                </a>
+            </div>
         </div>
     </main>
     <footer>
@@ -48,6 +63,7 @@
                     src="img/whatsapp.png"></a>
         </div>
     </footer>
+    <script src="lib/script.js"></script>
 
 </body>
 

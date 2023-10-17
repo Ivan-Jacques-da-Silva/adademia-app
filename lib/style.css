@@ -168,6 +168,19 @@ footer {
     color: #fff;
 }
 
+.form-cadastro select{
+    width: 332px;
+    height: 60px;
+    padding-left: 35px;
+    background-color: #000;
+    font-family: Anton;
+    font-size: 23px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 23px;
+    box-sizing: content-box;
+}
+
 .modal {
     visibility: hidden;
     opacity: 0;
@@ -221,6 +234,7 @@ footer {
     line-height: 40px;
     font-weight: 400;
     background-color: #000;
+    color: #fff;
 }
 
 .btn-cadastro:visited{
