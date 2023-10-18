@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Anton', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -251,3 +252,24 @@ footer {
     text-align: left!important;
 }
 
+table{
+    color: #fff;
+    border-collapse: collapse;
+}
+
+tbody{
+    background-color: #000!important;
+}
+
+tbody td{
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+tbody tr:first-child td{
+    border-top: none!important;
+}
+
+tbody tr td:first-child{
+    border-left: none!important;
+}
